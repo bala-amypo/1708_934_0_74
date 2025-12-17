@@ -11,10 +11,10 @@ import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
 
 @Service
-public class StudentServiceimpl implements StudentService {
+public class StudentServiceImpl implements StudentService {
 
     @Autowired
-    StudentRepo strepo;
+    private StudentRepo strepo;
 
     @Override
     public Student insertStudent(Student st) {
